@@ -60,3 +60,27 @@ Pod Lifecycle:
 - The pod is now running on the worker node, and the nginx container is serving requests.
 - The kubelet continuously monitors the pod to ensure it is running as expected.
 
+## Syntax of declarative of Kubernetes Files
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata: 
+    name: nginx
+    labels: 
+        run: nginx
+spec:
+    containers: 
+        - image : nginx
+          name: nginx
+```
+
+## Namespaces in Kubernetes
+
+kubectl get ns
+NAME              STATUS   AGE   
+default           Active   6m6s - The default namespace for user-created resources without a specified namespace.  
+kube-node-lease   Active   6m6s - Contains lease objects for node heartbeat data to improve node controller performance.
+kube-public       Active   6m6s - A publicly readable namespace for cluster information accessible to all users.
+kube-system       Active   6m6s  - The namespace for Kubernetes system components and critical cluster resources.
+

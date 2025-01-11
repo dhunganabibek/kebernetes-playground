@@ -59,3 +59,4 @@ Pod Lifecycle:
 
 - The pod is now running on the worker node, and the nginx container is serving requests.
 - The kubelet continuously monitors the pod to ensure it is running as expected.
+

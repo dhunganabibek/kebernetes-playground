@@ -84,3 +84,14 @@ kube-node-lease   Active   6m6s - Contains lease objects for node heartbeat data
 kube-public       Active   6m6s - A publicly readable namespace for cluster information accessible to all users.
 kube-system       Active   6m6s  - The namespace for Kubernetes system components and critical cluster resources.
 
+creating a namespace
+
+```bash
+kubectl create ns testing
+```
+
+delelting a  namespace
+
+```bash
+kubectl delete ns testing
+```

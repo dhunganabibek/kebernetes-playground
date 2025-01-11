@@ -78,7 +78,7 @@ spec:
 ## Namespaces in Kubernetes
 
 kubectl get ns
-NAME              STATUS   AGE   
+NAME              STATUS   AGE
 default           Active   6m6s - The default namespace for user-created resources without a specified namespace.  
 kube-node-lease   Active   6m6s - Contains lease objects for node heartbeat data to improve node controller performance.
 kube-public       Active   6m6s - A publicly readable namespace for cluster information accessible to all users.
